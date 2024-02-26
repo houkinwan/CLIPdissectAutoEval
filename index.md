@@ -9,7 +9,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec
 
 # Methodology
 
-![Example Image](DiagramV2.drawio.png)
+![Flow Diagram](diagram.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
 
