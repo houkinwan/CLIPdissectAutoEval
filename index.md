@@ -17,19 +17,30 @@ Our methodology employs three distinct approaches to evaluate neuron labels: BLI
 
 # Key Findings
 
-- **Qualitative Insights**: BLIP-2 demonstrates a nuanced understanding of activating images, closely aligning with human evaluations. OpenCLIP methods offer a more binary assessment, emphasizing direct similarity between image and neuron labels.
+- **Qualitative Insights**: BLIP-2 demonstrates a nuanced understanding of activating images, closely aligning with human evaluations. OpenCLIP methods offer a more binary assessment, emphasizing direct similarity between image and neuron labels. BLIP-2 qualitatively seems more robust in picking out nuances within complex settings.
+
+![Quantitative Analysis](qualitative.png)
+
+
 - **Quantitative Analysis**: Our evaluation reveals that BLIP-2 achieves the highest Intersection over Union (IoU) score with human evaluations, indicating its superior performance in neuron labeling.
+
+![Quantitative Analysis](table_ious.png)
+
 - **Efficiency**: While BLIP-2 offers detailed assessments, its processing time is longer. OpenCLIP methods excel in speed, providing rapid evaluations.
 
-![Qualitative Analysis](qualitative_analysis.png)
+![Time Analysis](evaltime.png)
+
+- **Comparisons**: 
+In our comparative analysis, the kappa statistic revealed a moderate agreement between human evaluators and the BLIP-2 model, suggesting a reasonable but imperfect alignment in neuron labeling interpretations. The substantial agreement between the two OpenCLIP methodologies indicated consistency in their binary evaluative approach, yet both showed lower agreement with BLIP-2, highlighting differing strategies in neuron evaluation.
+
+![Sim Analysis](kappamatrix.png)
 
 # Discussion
 
-The disparity between automated methods and human judgments highlights the complexity of achieving interpretability in neural networks. Our framework's adaptability allows for integration with advanced models, ensuring the evaluation process remains cutting-edge.
+The disparity between automated methods and human judgments highlights the complexity of achieving interpretability in neural networks. Our framework's adaptability allows for integration with advanced models, ensuring the evaluation process remains state of the art.
 
 # Conclusion
 
-The CLIP-Dissect Automatic Evaluation framework represents a significant leap forward in interpreting neural networks. By providing a structured and automated means of evaluating neuron labels, this tool aids researchers in understanding and improving neural network interpretability.
+The CLIP-Dissect Automatic Evaluation is a framework that provides a structured and automated means of evaluating neuron labels, in turn aiding researchers in understanding and improving neural network interpretability.
 
-[Table: IoU Scores Comparison](iou_scores.md)
-[Figure: Efficiency Comparison](efficiency_comparison.png)
+
