@@ -7,11 +7,13 @@ title: CLIP Dissect Auto Evaluation
 
 The CLIP-Dissect Automatic Evaluation framework is designed to enhance our understanding of deep neural networks by evaluating the functionality of individual neurons. This novel approach leverages multimodal vision/language models to automatically label neurons with concepts, shedding light on how networks process information.
 
+In this study, we address the challenge of evaluating the interpretability of neurons in deep neural networks, particularly focusing on the innovative CLIP-Dissect method that utilizes multimodal vision/language models for automatic neuron labeling. Recognizing the difficulty in quantitatively assessing hidden neurons due to the absence of ground truths, we propose an automated, qualitative evaluation approach that leverages three distinct methodologies: BLIP-2 prompting, and two OpenCLIP-based methods focusing on concept proportion and embedding similarity.
+
 # Methodology
 
 Our methodology employs three distinct approaches to evaluate neuron labels: BLIP-2 prompting, OpenCLIP with concept proportion, and OpenCLIP with embedding similarity. Each method provides a unique perspective on neuron functionality, utilizing top activating images to assess the relevance of CLIP-Dissect labels.
 
-![Methodology Overview](methods_overview.png)
+![Methodology Overview](flowchart.png)
 
 # Key Findings
 
