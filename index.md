@@ -11,7 +11,7 @@ In this study, we address the challenge of evaluating the interpretability of ne
 
 # Methodology
 
-Our methodology employs three distinct approaches to evaluate neuron labels: BLIP-2 prompting, OpenCLIP with concept proportion, and OpenCLIP with embedding similarity. Each method provides a unique perspective on neuron functionality, utilizing top activating images to assess the relevance of CLIP-Dissect labels.
+Our methodology employs three distinct approaches to evaluate neuron labels: BLIP-2 prompting, OpenCLIP with concept proportion, and OpenCLIP with embedding similarity. Each method provides a unique perspective on neuron functionality, utilizing top activating images to assess the relevance of CLIP-Dissect labels. We use these tools on CLIP-Dissects results to evaluate each neuron label with their associated activating images.
 
 ![Methodology Overview](flowchart.png)
 
