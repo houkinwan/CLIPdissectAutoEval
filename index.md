@@ -5,26 +5,29 @@ title: CLIP Dissect Auto Evaluation
 
 # Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
+The CLIP-Dissect Automatic Evaluation framework is designed to enhance our understanding of deep neural networks by evaluating the functionality of individual neurons. This novel approach leverages multimodal vision/language models to automatically label neurons with concepts, shedding light on how networks process information.
 
 # Methodology
 
-![Flow Diagram](diagram.png)
+Our methodology employs three distinct approaches to evaluate neuron labels: BLIP-2 prompting, OpenCLIP with concept proportion, and OpenCLIP with embedding similarity. Each method provides a unique perspective on neuron functionality, utilizing top activating images to assess the relevance of CLIP-Dissect labels.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
+![Methodology Overview](methods_overview.png)
 
-# Baselines
+# Key Findings
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
+- **Qualitative Insights**: BLIP-2 demonstrates a nuanced understanding of activating images, closely aligning with human evaluations. OpenCLIP methods offer a more binary assessment, emphasizing direct similarity between image and neuron labels.
+- **Quantitative Analysis**: Our evaluation reveals that BLIP-2 achieves the highest Intersection over Union (IoU) score with human evaluations, indicating its superior performance in neuron labeling.
+- **Efficiency**: While BLIP-2 offers detailed assessments, its processing time is longer. OpenCLIP methods excel in speed, providing rapid evaluations.
 
-# Results
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
+![Qualitative Analysis](qualitative_analysis.png)
 
 # Discussion
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi. 
+The disparity between automated methods and human judgments highlights the complexity of achieving interpretability in neural networks. Our framework's adaptability allows for integration with advanced models, ensuring the evaluation process remains cutting-edge.
 
 # Conclusion
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit turpis nec lorem rutrum, nec posuere mi sodales. Nulla facilisi.
+The CLIP-Dissect Automatic Evaluation framework represents a significant leap forward in interpreting neural networks. By providing a structured and automated means of evaluating neuron labels, this tool aids researchers in understanding and improving neural network interpretability.
+
+[Table: IoU Scores Comparison](iou_scores.md)
+[Figure: Efficiency Comparison](efficiency_comparison.png)
